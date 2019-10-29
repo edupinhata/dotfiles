@@ -5,7 +5,7 @@ This folder contains all the dotfiles that I use in my daily routine.
 ## Currently files
 
 - vim: used as editor to program, make notes, open files, etc.
-- tmux: used as a terminal multiplexer. The configurations are based on gpakosz[https://github.com/gpakosz/.tmux]
+- tmux: used as a terminal multiplexer. The configurations are based on [gpakosz](https://github.com/gpakosz/.tmux)
 - i3: used as windows manager.
 
 ## To be added

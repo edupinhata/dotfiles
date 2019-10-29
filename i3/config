@@ -154,3 +154,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+bindsym Control+Mod1+l exec "i3lock-fancy-dualmonitor -pgf Comic-Sans-MS -- scrot -z"

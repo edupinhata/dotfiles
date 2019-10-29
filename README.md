@@ -7,6 +7,7 @@ This folder contains all the dotfiles that I use in my daily routine.
 - vim: used as editor to program, make notes, open files, etc.
 - tmux: used as a terminal multiplexer. The configurations are based on [gpakosz](https://github.com/gpakosz/.tmux)
 - i3: used as windows manager.
+- i3lock: use i3lock-fancy-dualmonitor, available in [meskarune](https://github.com/meskarune/i3lock-fancy)
 
 ## To be added
 

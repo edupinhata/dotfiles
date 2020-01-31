@@ -5,7 +5,9 @@
 backup(){
     cp -r ~/.tmux* ./tmux/
     cp -r ~/.vimrc ./vim/
+    cp -r ~/.vim ./vim/
     cp -r ~/.config/i3/config ./i3/
+    cp -r ~/.bashrc ./bashrc/
 }
 
 load(){
@@ -14,6 +16,8 @@ load(){
     cp -r ./vim/.* ~/
     cp -r ./vim/* ~/
     cp -r ./i3/* ~/.config/i3/
+    cp -r ./bashrc/* ~/
+    mv ~/.tmux/tmux ~/.tmux/.tmux
 }
 
 USAGE="Usage: dotfiles [load|backup]"

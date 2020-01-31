@@ -163,3 +163,7 @@ bindsym Control+Mod1+l exec "i3lock-fancy-dualmonitor -pgf Comic-Sans-MS -- scro
 bindsym $mod+button4 exec pactl set-sink-volume 1 +2% #increase sound volume
 bindsym $mod+button5 exec pactl set-sink-volume 1 -2% #decrease sound volume
 bindsym $mod+button1 exec playerctl play-pause # mute sound
+
+# Print screen
+# sudo apt install scrot
+bindsym --release $mod+Shift+Print exec scrot -s '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'

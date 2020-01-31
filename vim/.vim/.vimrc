@@ -74,17 +74,3 @@ set path+=**
 
 " Style
 color desert
-
-
-" Plugins
-execute pathogen#infect()
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug '~/.fzf/plugin/fzf.vim'
-Plug '~/.vim/bundle/vim-orgmode-master/ftplugin/org.vim'
-Plug '~/.vim/bundle/vim-speeddating-master/plugin/speeddating.vim'
-
-call plug#end()
-

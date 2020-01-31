@@ -9,7 +9,9 @@ backup(){
 }
 
 load(){
+    cp -r ./tmux/.* ~/
     cp -r ./tmux/* ~/
+    cp -r ./vim/.* ~/
     cp -r ./vim/* ~/
     cp -r ./i3/* ~/.config/i3/
 }

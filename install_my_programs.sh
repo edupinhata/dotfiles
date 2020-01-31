@@ -2,6 +2,9 @@
 
 # This is a script to install all programs that I use to work
 
+# apt programs
+sudo apt install sshpass
+
 # Git repositories
 if [ ! -d ~/proj ]; then
     mkdir ~/proj
@@ -21,3 +24,16 @@ if [ -d i3lock-fancy ]; then
 fi
 
 
+# DPKG programs
+# Download dpkg programs and install then
+DPKG_PATH="/tmp/dpkg_installs"
+
+mkdir -p $DPKG_PATH
+cd $DPKG_PATH
+
+wget https://remarkableapp.github.io/linux.html
+
+for pack in *; do
+    echo "Installing $pack..."
+    sudo dpkg -i $pack
+done

@@ -11,12 +11,12 @@ backup(){
 }
 
 load(){
+    mkdir -p ~/.tmux/tmux
     cp -r ./tmux/.* ~/
     cp -r ./tmux/* ~/
     cp -r ./vim/.* ~/
-    cp -r ./vim/* ~/
-    cp -r ./i3/* ~/.config/i3/
-    cp -r ./bashrc/* ~/
+    #cp -r ./i3/* ~/.config/i3/
+    cp -r ./bashrc/.* ~/
     mv ~/.tmux/tmux ~/.tmux/.tmux
 }
 
